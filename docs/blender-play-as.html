@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/20zzorg/guides/blender-play-as by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Dec 2021 17:46:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/20zzorg/guides","deleted":false,"title":"Guides","dir":"ltr"},{"path":"/site/20zzorg/guides/blender-play-as","deleted":false,"title":"Blender Play-As","dir":"ltr"}];
+  var JOT_clearDotPath = 'images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":false,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://1098209320-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"z64.me","experiments":{"enableSubpagesGadgetInTakeout":true,"overrideDisableDomainEditing":false,"DisableSiteEditingFeature__disable_site_editing":true,"disableDomainEditing":true},"jot2atari":{"eligibility":"INELIGIBLE"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"configProperties":{"disableSiteEditing":null},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue=https://sites.google.com/site/20zzorg/guides/blender-play-as&service=jotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/65ef77/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/65ef77/system/js/codemirror.js","images/codemirror_css.css","images/trog_edit__en.js","images/trogedit.css","images/editor.css","images/codeeditor.css","/site/20zzorg/_/rsrc/1639038102000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/20zzorg","name":"20zzorg","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/guides","parentWuid":"wuid:gx:3461c150de1160dc","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Blender Play-As","locale":"en","wuid":"wuid:gx:35dd03eb13e4f6d8","revision":48,"path":"/guides/blender-play-as","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"blender-play-as","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false,"isGoogleAdmin":false},"gadgets":{"baseUri":"/site/20zzorg/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<link rel="canonical" href="https://z64.me/guides/blender-play-as" />
+<meta name="title" content="Blender Play-As - z64.me" />
+<meta itemprop="name" content="Blender Play-As - z64.me" />
+<meta property="og:title" content="Blender Play-As - z64.me" />
+<style type="text/css">
+      
+      @font-face {
+  font-family: 'Alike';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/alike/v13/HI_EiYEYI6BIoHjGQ5E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amethysta';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/amethysta/v9/rP2Fp2K15kgb_F3ibfW4Hz-G.ttf) format('truetype');
+}
+
+    
+    </style>
+<link rel="stylesheet" type="text/css" href="images/standard-css-sunset-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="images/overlay3db6.css?cb=sunset167a800px150goog-ws-leftcontent30bottomstandard" />
+<link rel="stylesheet" type="text/css" href="images/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/20zzorg/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Blender Play-As - z64.me</title>
+<meta itemprop="image" content="https://sites.google.com/site/20zzorg/_/rsrc/1562814733679/guides/blender-play-as/Marth.jpg" />
+<meta property="og:image" content="https://sites.google.com/site/20zzorg/_/rsrc/1562814733679/guides/blender-play-as/Marth.jpg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="sites-chrome-header-valign-bottom"><div class="sites-header-cell-buffer-wrapper"><h2><a href="index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="images/customlogobe22.jpg?revision=5" alt="z64.me" class="sites-logo sites-chrome-header-valign-bottom " /></a></h2></div></td><td class="sites-layout-searchbox sites-chrome-header-valign-bottom "></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><h4 class="sites-embed-title">z64.me</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first "><div dir="ltr" style="padding-left: 19px;"><a href="home.html" jotId="wuid:gx:15c64d0fb4a99d6c" class="sites-navigation-link topLevel">Home</a></div></li><li class="topLevel parent " wuid="gx:8b00b1080df4964"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="tools.html" jotId="wuid:gx:8b00b1080df4964" class="sites-navigation-link topLevel">Tools</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="z64convert.html" jotId="wuid:gx:619f7e06d8e38715" class="sites-navigation-link">z64convert</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="z64playas.html" jotId="wuid:gx:24c056f0b7459166" class="sites-navigation-link">z64playas</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="https://github.com/z64me/z64compress" class="sites-navigation-link">z64compress</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zzdec.html" jotId="wuid:gx:3ebdac53e582a5cb" class="sites-navigation-link">zzdec</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zzromtool.html" jotId="wuid:gx:3f969bebb7e66b73" class="sites-navigation-link">zzromtool</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zzrtl.html" jotId="wuid:gx:723bc24f6968160" class="sites-navigation-link">zzrtl</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zztexview.html" jotId="wuid:gx:3814a9e1e42c7a6" class="sites-navigation-link">zztexview</a></div></li></ul></li><li class="topLevel parent " wuid="gx:3461c150de1160dc"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="guides.html" jotId="wuid:gx:3461c150de1160dc" class="sites-navigation-link topLevel">Guides</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="new-blender-play-as.html" jotId="wuid:gx:1e4115aff55fc937" class="sites-navigation-link">New Blender Play-As</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="overlay-environment-setup-windows.html" jotId="wuid:gx:31c4ffe0a7bb0dba" class="sites-navigation-link">Overlay Environment Setup (Windows)</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="overlay-environment-setup-wsl.html" jotId="wuid:gx:7f57787e36f3fa7d" class="sites-navigation-link">Overlay Environment Setup (WSL)</a></div></li><li class="parent closed " wuid="gx:680f1d73b9264a26"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="zzromtool-2.html" jotId="wuid:gx:680f1d73b9264a26" class="sites-navigation-link">zzromtool</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 57px;"><a href="intro.html" jotId="wuid:gx:69526a322adbae0d" class="sites-navigation-link">Intro</a></div></li><li class=""><div dir="ltr" style="padding-left: 57px;"><a href="adding-scenes.html" jotId="wuid:gx:1313721689269554" class="sites-navigation-link">Adding Scenes</a></div></li><li class=""><div dir="ltr" style="padding-left: 57px;"><a href="adding-objects-actors.html" jotId="wuid:gx:2924c913ae6add2a" class="sites-navigation-link">Adding Objects and Actors</a></div></li><li class=""><div dir="ltr" style="padding-left: 57px;"><a href="custom-actor-overlay-workflow.html" jotId="wuid:gx:63775531d7dbb076" class="sites-navigation-link">Custom Actor Overlay Workflow</a></div></li><li class=""><div dir="ltr" style="padding-left: 57px;"><a href="sharp-map.html" jotId="wuid:gx:20d83e5384f7d0d7" class="sites-navigation-link">Custom Map Workflow (SharpOcarina)</a></div></li></ul></li></ul></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_9390391312459803" class="sites-embed" role="complementary"><h4 class="sites-embed-title">Partners</h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><b><a href="https://hylianmodding.com/" style="text-decoration:none" rel="nofollow">Hylian Modding</a><br />
+<a href="https://cloudmodding.com/" style="padding-top:5px;display:inline-block;text-decoration:none" rel="nofollow">Cloud Modding</a>
+</b></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="guides.html" dir="ltr">Guides</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Blender Play-As</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><b>Outdated</b></div><div><b>This tutorial is for the old pipeline. Please refer to the <a href="new-blender-play-as.html">new one</a>.<br /></b></div><div><b><br /></b></div><div><b>In this tutorial</b></div><b>
+<br />
+</b>
+<div>We'll be rigging a custom Marth model and replacing Link. This tutorial aims to be friendly for newbies, so expect a bit of redundancy. Even though the aim is to be friendly to Blender newcomers, I highly suggest you know at least the basics before continuing.</div><div><br /></div><div><b>Skriller</b> turned this process into a video tutorial, highly recommended that you <a href="https://www.youtube.com/watch?v=zw3OQpKEwUE&amp;list=PLzvq-QkK7C9R0egpDprEPEgDfkGSJFsEi" target="_blank">go give it a watch</a>!<br /></div><div><br />
+</div>
+<div><b><div style="display:block;text-align:left"><a href="images/marthe0bc.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/marth.jpg" style="width:100%" /></a></div><br />
+<br />
+You'll need</b><br />
+<ul><li><a href="https://www.blender.org/" target="_blank" rel="nofollow">Blender</a></li>
+<li><a href="zzconvert.html" target="_blank">zzconvert</a></li>
+<li><a href="zzplayas.html" target="_blank">zzplayas</a></li>
+<li><a href="https://github.com/CrookedPoe/io_export_objex" target="_blank" rel="nofollow">io_export_objex</a><br />
+</li>
+<li><strike>HxD</strike></li>
+<li><a href="defaultlinknotex.html" rel="nofollow">Base project file</a> (DefaultLinkNoTex.blend)<br />
+</li>
+<li><a href="marth.html" rel="nofollow">Marth model</a> (thanks, <b>Colonel Birdstrong</b>!)</li>
+<li><a href="marth-manifest.html" rel="nofollow">Marth-manifest.txt</a><br />
+</li>
+<li><a href="https://github.com/CrookedPoe/optimized_link_objects/blob/master/object_link_boy_optimized.zobj" target="_blank" rel="nofollow">object_link_boy_optimized.zobj</a><br />
+</li></ul>
+If you haven't set up io_export_objex yet, do that first.</div>
+<div><br />
+</div>
+<div>And if you know nothing about Blender, go here for a quick rundown.</div>
+<div>Actually, here's a video instead: <a href="https://www.youtube.com/watch?v=I-L57XSX70w">https://www.youtube.com/watch?v=I-L57XSX70w</a><br />
+</div>
+<div><br />
+</div>
+<div><b>Table of Contents</b></div>
+<div>
+<ul>
+<li><a href="#toc_preparation">Preparation</a></li>
+<li><a href="#toc_rigging">Rigging</a></li>
+<li><a href="#toc_folding">Folding</a></li>
+<li><a href="#toc_polish">Polish</a></li>
+<li><a href="#toc_exporting">Exporting</a></li>
+<li><a href="#toc_converting">Converting</a></li>
+<li><a href="#toc_importing">Importing</a><br />
+</li></ul>
+</div>
+<div>
+<a name="toc_preparation"></a>
+<h2><a name="TOC-Preparation"></a>Preparation</h2>
+</div>
+<div>Now let's get to it. Open DefaultLinkNoTex.blend in Blender. You should see a posed Link without any textures mapped to it.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/07320.gif?attredirects=0" imageanchor="1"><img border="0" src="images/0.gif" style="width:100%" /></a></div>
+</div>
+<div>Click the image to see the animation. Notice how the <b>Rest Position</b> is folded. This is how the game stores Link's skeleton by default, and it makes editing incredibly inconvenient. That's why we're going to apply the current pose as the new rest pose.</div>
+<div><br />
+</div>
+<div>Doing so right now would force Link into the rest pose, however, and we'd like to keep Link posed in case we need to use him as a reference. So let's bake the pose into his geometry first. Select Link, then go to the <b>Modifiers</b> tab and <b>Apply</b> the pose.<br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/1489e.png?attredirects=0" imageanchor="1"><img border="0" src="images/1-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div><br />
+</div>
+<div>Now that the pose is baked to the model, let's also bake it to the skeleton. To do this, select Link's skeleton and enter <b>Pose Mode</b>. Go to <b>Pose</b> &gt; <b>Apply</b> &gt; <b>Apply Pose as Rest Pose</b>.</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/259ec.png?attredirects=0" imageanchor="1"><img border="0" src="images/2-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div><br />
+</div>
+<div>If you cycle between <b>Pose Position</b> and <b>Rest Position</b> now, you'll see no changes. We're done fiddling around with the poses until later. Let's import that OBJ and get rigging!</div>
+<div><br />
+</div>
+<div><b>File</b> &gt; <b>Import</b> &gt; <b>Wavefront (.obj)</b></div>
+<div>Navigate to <b>Marth.obj</b> and import it.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/35ac1.png?attredirects=0" imageanchor="1"><img border="0" src="images/3-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div>Looks like they line up fine. If they didn't, you'd have to scale and orient your import to match Link's general size/rotation. Select Link and press H to hide him, since he's just in the way at this point. Switch to <b>Textured View</b> and let's see what we have.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/4cad1.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/4.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<a name="toc_rigging"></a>
+<h2><a name="TOC-Rigging"></a>Rigging</h2>
+</div>
+<div>We need to start up the rigging process, and the first step is to select the <b>mesh</b>, then the <b>skeleton</b>. Make sure the <b>skeleton</b> is the one with the <b>yellow outline</b>, not orange. If it isn't, hold shift and keep trying to select it. You'll get it. Notice the skeleton's yellow outline in the below screenshot. Also keep in mind that you must be in <b>Object Mode</b> when doing this.<br />
+</div>
+<div><br />
+</div>
+<div>Use the keyboard shortcut <b>Ctrl P</b> to bring up the parenting dialogue, and select <b>With Empty Groups</b>.</div>
+<div><br />
+</div>
+<div>Repeat for the following mesh groups: <b>Fist.L</b>, <b>Fist.R</b>, <b>Bottle.Hand.L</b></div>
+<div>(the FPS models need not be rigged; actually, hide them for now)</div>
+<div>(and hide <b>Fist.L</b>, <b>Fist.R</b>, and <b>Bottle.Hand.L</b> when you're done with them, too)<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/4.58677.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/4.5.jpg" style="width:100%" /></a></div>
+<br />
+</div>
+<div><br />
+</div>
+<div>We're done with the skeleton for now, so let's hide it. Also, the scene is a bit dark, so press the <b>N</b> key, and select <b>Shadeless</b> in the sidebar.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"></div>
+<br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/51bed.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/5.jpg" style="width:100%" /></a></div>
+</div><div><br /></div><div>In case you get lost, here's how you change editing modes and selection modes. It's on the pane directly below the viewport.<br />
+</div>
+<div><div style="display:block;text-align:left"><a href="images/5.534d6.png?attredirects=0" imageanchor="1"><img border="0" src="images/5.5.png" /></a></div><br /></div><div><br />
+</div>
+<div>Now select Marth and go into <b>Edit Mode</b>. It's also <b>very important</b> that you <b>make sure you're in vertex select</b>, not edge or face! <b>Keep in mind throughout this process that you must take care not to assign any vertex to more than one vertex group, or you could encounter glitches.</b> We're going to start with the left foot, so select these vertices and assign them to the <b>Foot.L</b> bone like in the screenshot:</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/60b34.png?attredirects=0" imageanchor="1"><img border="0" src="images/6-2.png" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div><b>Tip</b>: <b>Wireframe View</b> makes this easier sometimes. Toggle as needed by pressing the <b>Z key</b>.</div>
+<div><br />
+</div>
+<div>Let's talk about this <b>Vertex Group</b> menu for a second. There are four buttons: <b>Assign</b>, <b>Remove</b>, <b>Select</b>, <b>Deselect</b>. The vertices you have selected on the mesh, if you select a vertex group (<b>Foot.L</b> for example) and click the <b>Assign</b> button, they will be stored in that vertex group. <b>Remove</b> will remove them from the selected vertex group. <b>Select</b> and <b>Deselect</b> will select or deselect vertices belonging to the vertex group on the mesh. Keep this in mind throughout this tutorial.<br />
+</div>
+<div><br />
+</div>
+<div>As you would expect, next we're doing <b>Shin.L</b> and <b>Thigh.L</b>, then repeating for the other leg. Having fun yet?</div><div><br /></div><div>By the way, <b>UpperControl</b>, <b>LowerControl</b>, and <b>RootControl</b> should never have any vertices assigned to them. Just letting you know as early on as possible.<br /></div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/7f231.png?attredirects=0" imageanchor="1"><img border="0" src="images/7-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/8084a.png?attredirects=0" imageanchor="1"><img border="0" src="images/8-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div>The thigh is always the trickiest one for me. Feel free to unhide (<b>Alt H</b>) Link as needed and see which vertices in his mesh are assigned to <b>Thigh.L</b>. Repeat for the other leg and then let's get to the <b>Waist</b>.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/93f56.png?attredirects=0" imageanchor="1"><img border="0" src="images/9-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div>For the <b>Waist</b>, you assign all the vertices from the belt down, except for the vertices that have already been assigned to the legs. Does that make sense?</div>
+<div><br />
+</div>
+<div>Congratulations, you've through the super-challenging parts and it should be much easier from here! Don't get me wrong; the arms can be confusing at times as well, and even more-so the hat (if Marth had one), but if you can do the legs/waist, you can handle those. Don't expect any more screenshots about which vertices go where.</div>
+<div><br />
+</div>
+<div>Take care of the rest of the body now.</div>
+<div><br />
+</div>
+<div>Actually, here's one for the shoulder, since it may legitimately throw newcomers through a loop. So don't whine and say I didn't give you a reference for this one.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/10bd0c.png?attredirects=0" imageanchor="1"><img border="0" src="images/10-2.png" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/1114db.png?attredirects=0" imageanchor="1"><img border="0" src="images/11-2.png" style="width:100%" /></a></div>
+<br />
+</div>
+<div><b>Tip</b>: Press <b>H</b> on selected vertices to hide them. This will make doing the torso way easier! You can always unhide them by pressing <b>Alt H</b>.<br />
+</div>
+<div><br />
+</div>
+<div>Once you've finished, go back into <b>Object Mode</b> and find the <b>OBJEX</b> panel. Click the <b>Show Unassigned Vertices</b> button to see if you missed any vertices.</div>
+<div><br /></div><div><div style="display:block;text-align:left"><a href="images/12.1f06a.png?attredirects=0" imageanchor="1"><img border="0" src="images/12.1.png" style="width:100%" /></a></div></div><div><br />
+</div>
+<div>If it tells you "There are no unassigned vertices!", just take the program's word for it. If you missed any vertices, make sure to assign them to the correct vertex group.</div>
+<div><br />
+</div>
+<div>If you don't know how to assign the triangle floating directly behind Marth, that's a placeholder for the <b>Sheath</b> model, so assign it to that. The game needs this or some things will mess up. As a fun bit of trivia, all the Link forms in Majora's Mask which don't even use sheaths still have a placeholder triangle to also serve this very purpose.<br />
+<div><br />
+</div>
+There's also a <b>Show Multi-Assigned Vertices</b> button, right below the <b>Show Unassigned Vertices</b>
+ button. As its name implies, it shows any vertices that have been 
+assigned to more than one vertex group. If you've accidentally assigned 
+any vertices to more than one vertex group, take care of them before 
+proceeding.
+</div>
+<div><br />
+</div>
+<div>With Marth's main mesh now rigged, let's move on to the fist models that we hid earlier. These are used when he's holding a sword/shield/etc. There's also the bottle hand. Use <b>Alt H</b> to unhide everything, then re-hide Link, the skeleton, and the FPS models. For each of the alternate hand models (<b>Fist.L</b>, <b>Fist.R</b>, and <b>Hand.Bottle.L</b>), select, go into <b>Edit Mode</b>, and assign the vertices to the <b>vertex group</b> that fits, return to <b>Object Mode</b>, and <b>hide</b>.. For example, <b>Fist.L</b> would be assigned to the vertex group <b>Hand.L</b>.</div>
+<div><br />
+</div>
+<div>
+<a name="toc_folding"></a>
+<h2><a name="TOC-Folding"></a>Folding</h2>
+</div>
+<div>Unhide (<b>Alt H</b>) the skeleton, select it, and enter <b>Pose Mode</b>. We're going to get folding. Remember the folded Link from before? That's what we're aiming for with this. Here's a list of the transformations that need to be applied (assuming you kept the default pose from the beginning):<br />
+<ul><li>Rotate hat 135 degrees so that its bone is straight up</li>
+<li>Rotate head 90 degrees backwards</li>
+<li>Rotate sheath 180 degrees</li>
+<li>Rotate each arm 45 degrees inwards</li>
+<li>Rotate both arms 180 degrees</li>
+<li>Rotate hands 90 degrees so they point upwards</li>
+<li>Rotate each leg 22.5 degrees inwards</li>
+<li>Rotate waist 180 degrees</li>
+<li>Rotate feet 90 degrees so they point forwards</li></ul>
+</div>
+<div>
+<div>And here's a GIF of the folding process...</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/24cdc9.gif?attredirects=0" imageanchor="1"><img border="0" src="images/24.gif" style="width:100%" /></a></div>
+<br />
+</div>
+<div>You'll have to click it to see it animate.</div>
+<div><br />
+</div>
+<div>Now that he's folded, go into <b>Object Mode</b> and select his mesh. Just like with Link earlier, go into the <b>Modifier</b> tab and apply the armature.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/25c241.png?attredirects=0" imageanchor="1"><img border="0" src="images/25-2.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div><font size="3">Repeat the above step for <b>Fist.L</b>, <b>Fist.R</b>, and <b>Hand.Bottle.L</b>!</font><br />
+</div>
+<div><br />
+</div>
+<div>Now select the armature and go back into <b>Pose Mode</b>. Just like with Link, we're going to be applying the pose as the <b>Rest Pose</b>.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/26f27f.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/26-2.jpg" style="width:100%" /></a></div>
+<br />
+</div>
+<div>With the pose applied, select the mesh again and let's add an <b>Armature</b> modifier.<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/277cdc.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/27.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Set <b>Object</b> to <b>Link</b> (the name of the skeleton).<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/286959.png?attredirects=0" imageanchor="1"><img border="0" src="images/28.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div>While you're at it, I suggest enabling these two settings for easier editing later:</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/292c5c.png?attredirects=0" imageanchor="1"><img border="0" src="images/29.png" /></a></div>
+</div>
+<div><br />
+</div>
+<font size="3">Repeat the above steps for <b>Fist.L</b>, <b>Fist.R</b>, and <b>Hand.Bottle.L</b>!</font>
+<div><br />
+</div>
+<div>Now select the skeleton and enter <b>Pose Mode</b>. Unfold him by simply using the inverses of the rotations from before. Rotate the head forward 90 degrees instead of back 90 degrees, rotate the arms 45 degrees away from the torso instead of 45 degrees towards the torso, etc.<br /></div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/305f50.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/30.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Good as new.<br />
+</div>
+</div>
+<div>
+<a name="toc_polish"></a>
+<h2><a name="TOC-Polish"></a>Polish</h2>
+</div>
+<div>The whole model is rigged now. You could very well export, convert, and import into the game right now, but something is bothering me. Skip this stuff if you want, but I'm throwing it in as a bonus for anyone not already familiar with these features. If you don't care or already know all this, skip ahead to <b>Exporting</b>.<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/13f980.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/13.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>See the weirdness going on with the neck and breastplate textures? Let's fix those. Starting with the neck texture. Select Marth and go into <b>Edit Mode</b>. Then, with <b>Face Select</b>, select one of the triangles with the texture applied.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/14d312.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/14.jpg" style="width:100%" /></a></div>
+<br />
+</div>
+<div>It's usually automatically selected and displayed in the <b>UV/Image Editor</b>. If it isn't, you will be able to locate it easily enough. Use this image as a guide:</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/15f8bb.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/15.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>We're going to be enabling <b>Clamp</b> along both the <b>X</b> and <b>Y</b> axes.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/16d227.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/16.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>That did it. Rinse and repeat for the breastplate and any other odd textures. There are cases where you may want to selectively clamp along X or Y instead of both. Take the boots, for example:</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/177964.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/17.jpg" style="width:100%" /></a></div>
+<br />
+</div>
+<div>With clamping along Y on both of these textures, you get:</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/188922.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/18.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Use clamping any time you encounter problems like this.</div>
+<div><br />
+</div>
+<div>Let's set the gemstone he's wearing to be shiny/reflective while we're at it. Select it the same way we normally would.<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/19823c.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/19.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Locate the texture in the UV area, but instead of messing with the clamping, we're actually going to be clicking <b>Reflective</b>. When you're back in Object Mode, the gem will have different texture mapping based on the direction you look at it from. This is called <b>texgen</b> in the game, and that's how display lists like sword blades are shiny.<br />
+</div>
+<div><br />
+</div>
+<div>While we're at it, let's also make the gem change color based on which tunic is equipped (Kokiri, Goron, Zora). With it selected, locate its material in the <b>Material Panel</b>, and append <b>_ZZENV</b> to its name.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/20871e.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/20.jpg" style="width:100%" /></a></div>
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/2190d5.png?attredirects=0" imageanchor="1"><img border="0" src="images/21-2.png" /></a></div>
+<br />
+</div>
+<div>Now it will be the color of the equipped tunic in-game. Keep this in mind for any future play-as where you may want to have a texture change color based on the equipped tunic. You get the best results if the base texture is white. For example, here is one of Link's tunic textures:</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/224974.png?attredirects=0" imageanchor="1"><img border="0" src="images/22-2.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<a name="toc_exporting"></a>
+<h2><a name="TOC-Exporting"></a>Exporting</h2>
+</div>
+<div>Exporting is simple, but there are some things that are easy to forget. Remember Link? Yeah, we don't need him in the scene anymore. In <b>Object Mode</b>, use <b>Alt H</b> to unhide everything. Select and delete Link. Unless you have some other weird meshes floating around, we should be good to go. The main rigged Marth model should be named <b>riggedmesh</b>. This is a requirement for the converter. The other meshes in the scene should be <b>Fist.L</b>, <b>Fist.R</b>, <b>Hand.Bottle.L</b>, <b>FPS.Forearm.L</b>, <b>FPS.Hand.L</b>, <b>FPS.Forearm.R</b>, and <b>FPS.Hand.R</b>.</div>
+<div><br />
+</div>
+<div>If you meet all those prerequisites, <b>select the skeleton</b> (not the mesh!) in <b>Object Mode</b>, then go to <b>File</b> &gt; <b>Export</b> &gt; <b>Extended OBJ (.objex)</b>. Leave all the settings the same, and export <b>Marth.objex</b>.</div>
+<div><br />
+</div>
+<div>If you get errors, make sure all vertices are assigned, or fiddle around until it works.<br />
+</div>
+<div><br />
+</div>
+<div>
+<a name="toc_converting"></a>
+<h2><a name="TOC-Converting"></a>Converting</h2>
+</div>
+<div>We'll be using <b>zzconvert-gui</b> for the conversion. If you're command-line savvy and want to use the command-line version, go for it. 8)</div>
+<div><br />
+</div>
+<div>Make sure you have these settings:</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/3151c3.png?attredirects=0" imageanchor="1"><img border="0" src="images/31.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Now you click the <b>OBJ[EX] to ZOBJ</b> button and follow the guides. Save as <b>Marth.zobj</b>. If it works, you'll get a window like this:<br />
+</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/3219fc.png?attredirects=0" imageanchor="1"><img border="0" src="images/32.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div>Assembly textures? What are those? 8) Click <b>Done</b> to exit the program.<br />
+</div>
+<div><br />
+</div>
+<div>
+<a name="toc_importing"></a>
+<h2><a name="TOC-Importing"></a>Importing</h2>
+</div>
+<div>Now we're going to open <b>zzplayas</b>. Command-line users, take to <b>zzobjman</b>.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="images/33460d.png?attredirects=0" imageanchor="1"><img border="0" src="images/33.png" /></a></div>
+</div>
+<div><br />
+</div>
+<div>If you made it this far, I assume you can read. But I'll guide you anyway. We're replacing <b>Adult Link</b>, so the <b>Import</b> checkbox should be selected <b>only below Adult Link</b>. For Manifest, use <b>Marth-manifest.txt</b> (found at the top of this tutorial in case you missed it). For <b>Bank ZOBJ</b>, use CrookedPoe's <b>object_link_boy_optimized.zobj</b>. For <b>Play-As ZOBJ</b>, use <b>Marth.zobj</b>. For <b>ROM</b>, use <b>your copy of the debug rom</b>. If you're using the latest revision of <b>zzplayas</b>, you'll be able to specify a <b>ZZRP</b> file if you desire to use in combination with zzromtool.<br />
+</div>
+<div><br />
+</div>
+<div>Then click <b>Import</b>.</div><div><br /></div><div>If everything worked properly, Adult Link should be replaced with Marth.</div><div><br /></div><div><div style="display:block;text-align:left"><a href="images/marthe0bc.jpg?attredirects=0" imageanchor="1"><img border="0" src="images/marth.jpg" style="width:100%" /></a></div></div><div><br /></div><div>Congratulations on your import!<br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-subfooter"><div class="sites-subfooter-content"><div dir="ltr">Do you not want to unhear what I didn't just say to you once?</div></div></div>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="reportabuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="images/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">if (webspace.editorResources['text']) {webspace.editorResources['text'].unshift('#\/site\/20zzorg\/system\/app\/css\/overlay.css?cb\x3dsunset167a800px150goog-ws-leftcontent30bottomstandard');webspace.editorResources['text'].unshift('#\/site\/20zzorg\/_\/rsrc\/1639038102000\/system\/app\/themes\/sunset\/standard-css-sunset-ltr-ltr.css');}</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "z64-3.html", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/20zzorg/guides/blender-play-as by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Dec 2021 17:47:28 GMT -->
+</html>
